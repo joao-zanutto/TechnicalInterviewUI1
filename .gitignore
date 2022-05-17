@@ -32,3 +32,4 @@ packages/
 DevBuild/
 applicationhost.config
 *.vs
+*.config
