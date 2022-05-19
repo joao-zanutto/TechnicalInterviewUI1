@@ -135,7 +135,7 @@ namespace TechnicalInterviewUI.Services
                 var client = _client.CreateClient();
 
 
-                HttpResponseMessage response = await client.SendAsync(request);
+                HttpResponseMessage response = await client.SendAsync(request).ConfigureAwait(false);
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
